@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+    <style>
+        table, th, td{
+            border: solid
+        }
+        #mi_id{
+            color: red
+        }
+    </style>
+
+</head>
+<body>
+
+    <header id="header1">
+        <h2>header</h2>
+        <nav>
+            <a href="#listas"><i class="fa fa-list" aria-hidden="true"></i> Listas</a>
+            <a href="#tablas"><i class="fa fa-table" aria-hidden="true"></i> Tablas</a>
+            <a href="#colspan"><i class="fa fa-columns" aria-hidden="true"></i>
+                Colspan</a>
+            <a href="iconosfa.html"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                ICONOS</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCION 1: LISTAS-->
+        <section id="listas">
+            <h2>Lista ordenada</h2>
+            <ol type="I" reversed> 
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+                <li>Opción 3</li>
+                <li>Opción 4</li>
+                <li>Opción 5</li>
+                <li>Opción 6</li>
+            </ol>
+            <hr>
+            <h2>Lista Desordenada</h2>
+            <ul>
+                <li>Opción</li>
+                <li>Opción</li>
+                <li>Opción</li>
+            </ul>
+            <hr>
+        </section>
+        <!-- SECCION 2: TABLAS-->
+        <section id="tablas">
+            <h2>TABLAS</h2>
+            <table>
+                <tr>
+                    <th>Título 1</th>   <!--TABLE HEADER-->
+                    <th id="mi_id">Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+                <tr>
+                    <td>Celda 1,1</td>   <!--TABLE DATA-->
+                    <td>Celda 1,2</td>
+                    <td>Celda 1,3</td>
+                </tr>
+                <tr>
+                    <td>Celda 2,1</td>
+                    <td>Celda 2,2</td>
+                    <td>Celda 2,3</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section id="colspan">
+            <h2>Colspan y Rowspan</h2>
+            <table>
+                <tr>
+                    <th>Cursos</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td>Fullstack</td>
+                    <td>2123</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>Cursos</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Fullstack</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>Cursos</th>
+                    <th>Comisión</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Fullstack</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>2254</td>
+                </tr>
+            </table>
+        </section>
+
+
+    </main>
+    
+    <footer>
+        <h2>footer</h2>
+        <a href="#header1">Volver arriba</a>
+    </footer>
+
+</body>
+</html>

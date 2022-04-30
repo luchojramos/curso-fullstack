@@ -1,0 +1,22 @@
+@keyframes cambiarColores {
+    /*from{background-color: green;}
+    to{background-color: red;} */
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+.anim{
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    color: white;
+    animation: cambiarColores 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+

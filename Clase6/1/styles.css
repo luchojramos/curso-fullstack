@@ -1,0 +1,48 @@
+*{
+    background-color: #062C30;
+}
+
+@font-face {
+    font-family: "blackjar";
+    src: url('fonts/BLACKJAR.TTF');
+}
+
+section span img {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: #E2D784;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: capitalize;
+    /*text-shadow: 5px 3px lightgrey;
+    text-decoration: overline lightblue;*/
+    /*font-family: blackjar;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    color: #F5F5F5;
+    
+}
+li {
+    
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 1px dashed #E2D784;
+    text-align: center;   
+    border-radius: 5px; 
+}
+a{
+    color: #E2D784;
+    text-decoration: none;
+    font-family: 'Inspiration', cursive;
+}
+
+/*
+font-family: 'Inspiration', cursive;
+font-family: 'Oswald', sans-serif;
+*/

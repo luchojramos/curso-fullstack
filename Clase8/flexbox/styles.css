@@ -1,0 +1,27 @@
+.flex-container{
+    background-color: aqua;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    /* EJE PRINCIPAL HORIZONTAL */
+    flex-direction: row; 
+    justify-content: space-around;
+    /* EJE SECUNDARIO VERTICAL */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 70px;
+    height: 70px;
+    border: solid black 2px;
+}
+
+.flex-item-especial {
+    width: 70px;
+    height: 70px;
+    border: solid red 2px;
+    /*comportamiento distinto*/
+    /*align-self: flex-start;*/
+    
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+.caja{
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border: solid 5px blue;
+    box-sizing: content-box; /*por default*/
+}
+.caja2{
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border: solid 5px blue;
+    box-sizing: border-box; /*se pone en el universal*/
+    font-size: 20px;
+}
+
+.caja-em{
+    font-size: 2em; /* parte de 16px y se multiplica por el "em" */
+}
+
+.em {
+    font-size: 1.5em; /* se multiplica por lo que vale su padre, o sea, (16px*2*1.5) */
+}
+
+.rem {
+    font-size: 2rem; /* compara directamente con el root, o sea, 2*16px */
+}
+img {
+    height: 25vh;
+    width: 50vw;
+}
