@@ -1,6 +1,6 @@
 let start = new Date().getTime() / 1000
 
-prompt("Ingrese su nombre ")
+prompt("Ingrese su nombre crack")
 
 let end = new Date().getTime() / 1000
 

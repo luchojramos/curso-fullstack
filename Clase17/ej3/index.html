@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    </div>
+    <h1>Dom Basico</h1>
+
+
+    <p id="parrafo1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolorum.</p>
+    <p id="parrafo2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolorum.</p>
+    <p id="parrafo3">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolorum.</p>
+
+    <script>
+
+        let nuevoElemento = document.createElement("h3")    //Creo elemento
+
+        let contenido = document.createTextNode("Un subtitulo") //Creo contenido
+
+        nuevoElemento.appendChild(contenido)    //matcheo element y content
+
+        document.getElementById("parrafo2").appendChild(nuevoElemento) //lo coloco luego del elemento que llamé
+
+    </script>
+
+</body>
+</html>
