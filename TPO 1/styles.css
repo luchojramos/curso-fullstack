@@ -6,6 +6,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif
 }
 /*---------------  NAV  ------------------*/
 nav {
@@ -28,7 +29,7 @@ nav a{
     text-decoration: none;
     color: #00ADB5;
     font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
     background-color: transparent;
 }
 nav a:hover{
@@ -44,9 +45,44 @@ nav img {
     margin: 10px
 }
 
-#form-div {
-    box-sizing: ;
+
+label {
     color: #EEEEEE;
+    font-size: x-large;
+}
+
+input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+textarea {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+#enviar-btn {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: x-large;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#enviar-btn:hover {
+    background-color: #008188;
+}
+
+#form-div {
+    display: grid;
+    color: #EEEEEE;
+    padding: 1rem;
+    justify-content: center;
 }
 
 
