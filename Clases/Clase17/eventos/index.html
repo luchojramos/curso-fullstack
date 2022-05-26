@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    
+        <button id="elBoton">Botonnn</button>
+    </div>
+    
+
+    <script>
+
+        let mensaje = function(){
+            console.log("Hicistes click")
+        }
+        let mensaje2 = function(){
+            console.log("Moviste el mouse")
+        }
+        let mensaje3 = function(){
+            console.log("Sacaste el mouse")
+        }
+
+        let boton = document.getElementById("elBoton")
+        boton.addEventListener("click",mensaje)
+        boton.addEventListener("mouseover",mensaje2)
+        boton.addEventListener("mouseout",mensaje3)
+
+    </script>
+
+</body>
+</html>

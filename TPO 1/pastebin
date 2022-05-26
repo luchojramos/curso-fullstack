@@ -1,0 +1,86 @@
+
+
+grid container
+
+ <section>
+        <div class="grid-container">
+            <img src="https://picsum.photos/500?random=1" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur eligendi dicta eos perferendis quis. Reiciendis maiores pariatur provident illo repellat at officia dolorum fugit, optio nobis aliquid molestias rerum tempore nisi unde dolorem cum labore amet atque, voluptatum porro qui. Ratione, aliquid consequuntur ducimus fugit aliquam deleniti. Ducimus, aut?
+            incidunt?</p>
+        </div>
+
+        
+
+
+
+
+    </section>
+.grid-container{
+    /*Un fondo medio transparente*/
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+
+    /*Para modificar la imagen de adentro transformo el item en un container*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    /*le doy 150px a la imagen y 1fr al texto*/
+    /*grid-template-columns: 400px 1fr;*/
+    padding: 1rem 5rem 1rem 5rem;
+
+    /*Si quiero separar el texto de las imagenes.*/
+    grid-gap: 5rem;
+
+    ;
+}
+
+
+nav
+
+@media screen and (max-width:700px) {
+
+    nav {
+        padding: 0;
+    }
+    nav img {
+        height: 20vw;
+    }
+    nav a {
+        font-size: 10px;
+    }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: #222831;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+nav li {
+    box-sizing: content-box;
+    margin: 1rem;
+    background-color: transparent;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #00ADB5;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: #EEEEEE;
+}
+

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------  NAV  ------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #393E46;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    /*border: 2px solid black;*/
+    background-color: transparent;
+}
+
+nav a{
+    text-decoration: none;
+    color: #00ADB5;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: transparent;
+}
+nav a:hover{
+    color: #EEEEEE;
+}
+
+nav li {
+    box-sizing: content-box;
+    margin: 0.5em;
+    background-color: transparent;
+}
+nav img {
+    margin: 10px
+}
+
+#form-div {
+    box-sizing: ;
+    color: #EEEEEE;
+}
+
+
+
+/*-------------- PRODUCTS -----------------*/
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #393E46;
+}
+
+h2{
+    color: #00ADB5;
+}
+
+body {
+    background: #222831;
+}
+
+p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    color: #EEEEEE;
+}
+
+button {
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    color: #EAEAEA;
+    font-weight: bold;
+    background-color: #FF2E63;
+}
+
+
+.grid-container img {
+    /*Para que la imagen se ajuste al container*/
+    max-width: 600px;
+    border-radius: 0.5rem;
+    width: 30vw;
+}
+
+
+
+.grid-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-template-areas:
+        "a b b"
+        "c c d";
+    align-items: center;
+    padding: 2rem 4rem;
+
+}
+
+.item1 {
+    grid-area: a;
+    justify-self: center;
+}
+
+.item2 {
+    grid-area: b;
+    justify-self: center;
+    padding: 2rem;
+}
+
+.item3 {
+    grid-area: c;
+    justify-self: center;
+    padding: 2rem;
+}
+
+.item4 {
+    grid-area: d;
+    justify-self: center;
+}
+
+
+@media screen and (max-width:700px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "b"
+            "a"
+            "c"
+            "d";
+        padding: 1rem;
+    }
+
+    .grid-container img {
+        /*Para que la imagen se ajuste al container*/
+        width: 100%;
+        max-width: 300px;
+    }
+    /*
+    p {
+        color: red;
+    }
+    */
+    nav li {
+        margin: 0.3rem;
+    }
+    nav a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1200px) {
+    /*
+    p {
+        color: blue;
+    }
+    */
+}
+
+@media screen and (min-width:1200px) {
+    
+    p {
+        /*color: green;*/
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+    
+    nav {
+        height: 15vh;
+    }
+
+    nav li {
+        margin: 1rem;
+    }
+    nav a {
+        font-size: 2rem;
+    }
+}
