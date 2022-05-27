@@ -19,7 +19,7 @@ let sendForm = function() {
         alert("Ingrese un e-mail válido")
     }
     else {
-        alert("Formulario enviado!")
+        //alert("Formulario enviado!")
         window.location.href = 'formsent.html';
     }
     
