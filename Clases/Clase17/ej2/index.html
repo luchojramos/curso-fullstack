@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <h2 class="clase1">primer Query selector</h2>
@@ -39,7 +41,31 @@
 
 
 
-    <script src="script.js"></script>
+    <!--script src="script.js"-->
+    <script>
+        let calcular = function () {
+            let texto = document.getElementById("texto").value
+            let letra = document.getElementById("letra").value
+            let cant = ""
+
+            console.log(texto)
+            console.log(letra)
+
+            texto = texto.split("")
+            console.log(texto)
+
+            cant = texto.filter(e => e == letra)
+            console.log(cant.length)
+
+            alert("Esta " + cant.length + " veces")
+        }
+
+        let boton = document.getElementById("calc")
+        boton.addEventListener("click", calcular)
+
+
+    </script>
 
 </body>
+
 </html>

@@ -50,6 +50,10 @@ body{
     align-items: center;
 }
 
+#logo {
+    height: 100px;
+}
+
 /*Si quiero que un item empiece en otro lugar*/
 #item-especial{
     /*Con columnas*/

@@ -27,23 +27,28 @@
             <h2>
                 Llena el formulario para contactarnos:
             </h2>
+            <br>
             <label>Nombre y Apellido: 
                 <br>
-                <input type="text" name="Nombre_Apellido" placeholder="Mete tu nombre" required>
+                <input id="nombreApellido" type="text" name="Nombre_Apellido" placeholder="John Doe" required >
             </label>
             <br>
             <label>E-mail:
                 <br>
-                <input type="email" name="Nombre_Apellido" placeholder="Mete tu nombre" required>
+                <input id="email" type="text" name="Nombre_Apellido" placeholder="example@domain.com" required>
             </label>
             <br>
             <label>Mensaje:
                 <br>
-                <textarea name="Mensaje" cols="100" rows="10" placeholder="Mete tu mensaje" required></textarea>
+                <textarea id="mensaje" name="Mensaje" cols="75" rows="10" placeholder="Me gustaria contratarlos para..." required></textarea>
             </label>
             <br>
-            <input type="submit" value="Enviar" id="enviar-btn">
         </form>
+        <div>
+            <button id="enviar-btn" class="form-btn">Enviar</button>
+            <button id="clear-btn" class="form-btn">Clear</button>
+        </div>
+        
     </div>
     
 
